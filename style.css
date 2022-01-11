@@ -16,11 +16,13 @@ body{
 }
 .main-header{
     display: flex;
+    
 }
 .logo{ 
     margin: 1.5rem;
     width:90px;
     height: 90px;
+    
 
 }
 .nav-menu{
@@ -31,11 +33,13 @@ body{
    margin-top: 3rem;
    
    
+   
 }
 .primary-navigation{
     display: flex;
     gap:  2em;
     justify-content: space-between;
+    display: none;
     
 }
 .primary-navigation a > span {
@@ -145,6 +149,138 @@ h5 {
     font-weight: lighter;
     line-height: 24px;
     font-size: 20px;
+}
+.moon-container, .mars-container, .titan-container, .europa-container{
+    height: 150vh;
+    width:100%;
+    background-image: url("second-page-space.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color:white;
+    text-align: center;  
+}
+h6{
+    padding-top: 50px;
+    font-size:18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: barlow;
+    
+}
+.first-planet{
+    width: 225px;
+    height: 225px;
+    
+
+}
+.moon-list-box{
+    gap:2em;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: barlow;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+   padding-bottom: 25px;
+}
+.moon-list{
+    cursor: pointer;
+
+}
+.moon-list:hover{
+    border-bottom: 3px solid white;
+    transition: ease-in-out .2s;
+}
+.rep{
+    margin-inline-end: 1em;
+    color: grey;
+
+}
+h2{margin-top: 0;
+    padding-top: 10px;
+    font-size: 64px;
+    font-weight: lighter;
+    
+    font-family: bellefair;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 25px;
+    
+
+}
+hr{
+    width: 90%;
+    height: 1px;
+    color: #383B4B;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #383B4B;
+   
+}
+.bottom-facts-box-1{
+    padding-bottom: 20px;
+}
+
+.bottom-facts-box-1, .bottom-facts-box-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-top: 20px;
+    
+}
+
+.travel-time{
+    font-size:22px;
+    font-weight: 400;
+    font-family: barlow ;
+    line-height: 16px;
+    letter-spacing: 2px;
+
+}
+.number-total{
+    font-size:30px;
+    line-height: 32px;
+    font-family: bellefair;
+    font-weight: 400;
+}
+.main-pilot-container{
+    background-image:url("second-background.jpeg");
+    height: 150vh;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color:white;
+    text-align: center;  
+
+}
+.accent-list-box{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+.accent-dot{
+    width:10px;
+    height: 10px;
+    background-color:#979797;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.accent-dot:hover{
+    background-color:white;
+}
+.second-accent{
+    padding-top:0;
+    margin-top:0;
+    transform: translateY(-4px);
 }
 
 
