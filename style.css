@@ -161,7 +161,7 @@ h5 {
 }
 h6{
     padding-top: 50px;
-    font-size:18px;
+    font-size:24px;
     font-weight: 400;
     letter-spacing: 1px;
     font-family: barlow;
@@ -175,7 +175,7 @@ h6{
 }
 .moon-list-box{
     gap:2em;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 200;
     font-family: barlow;
     display: flex;
@@ -183,18 +183,33 @@ h6{
     margin-top: 45px;
    padding-bottom: 25px;
 }
-.moon-list{
+.moon-list-a, .moon-list-b, .moon-list-c, .moon-list-d{
     cursor: pointer;
-
 }
-.moon-list:hover{
+ .moon-list-a:hover{
     border-bottom: 3px solid white;
     transition: ease-in-out .2s;
+    cursor: pointer;
+}
+.moon-list-b:hover{
+    border-bottom: 3px solid white;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+.moon-list-c:hover{
+    border-bottom: 3px solid white;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+.moon-list-d:hover{
+    border-bottom: 3px solid white;
+    transition: ease-in-out .2s;
+    cursor: pointer;
 }
 .rep{
-    margin-inline-end: 1em;
     color: grey;
-
+    font-size:24px;
+    margin-inline-end: 0.5em;
 }
 h2{margin-top: 0;
     padding-top: 10px;
@@ -211,7 +226,7 @@ p{
     padding-bottom: 25px;
     padding-left: 50px;
     padding-right: 50px;
-    
+    color: #D0D6F9;
 
 }
 hr{
@@ -242,7 +257,7 @@ hr{
     font-family: barlow ;
     line-height: 16px;
     letter-spacing: 2px;
-
+    color: #D0D6F9;
 }
 .number-total{
     font-size:30px;
@@ -252,7 +267,7 @@ hr{
 }
 .main-pilot-container{
     background-image:url("second-background.jpeg");
-    height: 110vh;
+    height: 100vh;
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -283,22 +298,50 @@ hr{
     margin-top:0;
     transform: translateY(-4px);
 }
+.pilot-name{
+    font-size: 28px;
+    font-family: bellefair;
+    margin-bottom: 0;
+    color: whiteadd;
+}
 .pilot-text{
     padding-left: 50px;
     padding-right: 50px;
+    font: 18px;
+    color: #D0D6F9;
+    
 }
+
 .accent-circle-box{
-    display: flex;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1em;
+   margin-top: 40px;
+   margin-bottom: 40px;
 }
 .accent-circle{
-    width: 40px;
-    height: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border: solid white;
+    border-width:  1px;
     border-radius: 50%;
-    border: 1px soild #979797;
+   text-align: center;
+   color: white;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+    
+}
+.accent-circle:hover{
+    background-color: aliceblue;
+    color: black;
 }
 .main-tech-container{
     background-image:url("third-background.png");
-    height: 100vh;
+    height: 130vh;
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -306,6 +349,13 @@ hr{
     color:white;
     text-align: center;  
 
+}
+.tech-img{
+    width:100%;
+
+}
+.term{
+    font-size: 18px;
 }
 
 
