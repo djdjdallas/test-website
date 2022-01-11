@@ -1,19 +1,18 @@
 body{
     margin:0;
     padding:0;
-    height: 400vh;
+    height: 500vh;
     font-family: barlow;
 }
 .main-hero-container{
     background-image: url(hero_image.jpeg);
     background-size: cover;
-    height: 120vh;
+    height: 140vh;
     display: flex;
-   
     flex-direction: column;
     align-items: center;
-
 }
+
 .main-header{
     display: flex;
     
@@ -151,7 +150,7 @@ h5 {
     font-size: 20px;
 }
 .moon-container, .mars-container, .titan-container, .europa-container{
-    height: 150vh;
+    height: 140vh;
     width:100%;
     background-image: url("second-page-space.jpeg");
     background-size: cover;
@@ -201,7 +200,7 @@ h2{margin-top: 0;
     padding-top: 10px;
     font-size: 64px;
     font-weight: lighter;
-    
+    margin-bottom:8px;
     font-family: bellefair;
 }
 p{
@@ -210,6 +209,8 @@ p{
     line-height: 25px;
     text-align: center;
     padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
     
 
 }
@@ -251,7 +252,7 @@ hr{
 }
 .main-pilot-container{
     background-image:url("second-background.jpeg");
-    height: 150vh;
+    height: 110vh;
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -281,6 +282,30 @@ hr{
     padding-top:0;
     margin-top:0;
     transform: translateY(-4px);
+}
+.pilot-text{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.accent-circle-box{
+    display: flex;
+}
+.accent-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px soild #979797;
+}
+.main-tech-container{
+    background-image:url("third-background.png");
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color:white;
+    text-align: center;  
+
 }
 
 
