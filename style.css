@@ -3,6 +3,7 @@ body{
     padding:0;
     height: 500vh;
     font-family: barlow;
+    width: 100%;
 }
 .mobile-hero-container{
     background-image: url(mob-hero.png);
@@ -117,12 +118,13 @@ a, .active{
        opacity: .9;
     }
 h3{
-    width:440px;
- font-size:32px;
+    width: 380px;
+ font-size:26px;
  line-height: 25px;
 letter-spacing: 1px; 
 font-weight: 400;
 margin-bottom: 0;
+text-align: center;
 
 }
 h4 { 
@@ -254,10 +256,7 @@ hr{
    flex-direction: column;
     gap: 1.5em;
     padding-top: 20px;
-    
-   
-    
-    
+
 }
 
 .travel-time{
@@ -274,11 +273,24 @@ hr{
     font-family: bellefair;
     font-weight: 400;
 }
+.second-accent{
+    width: 80%;
+    height: 1px;
+    color: #383B4B;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #383B4B;
+    
+   
+
+}
 .main-pilot-container{
     background-image:url("second-background.jpeg");
     height: 100vh;
     width:100%;
     background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
     display: flex;
     color:white;
@@ -314,9 +326,11 @@ hr{
     color: white;
 }
 .pilot-text{
-    
     font: 18px;
     color: #D0D6F9;
+    
+    text-align: center;
+    margin-inline-start: 10em;
     
 }
 
@@ -362,10 +376,26 @@ hr{
     width:100%;
 
 }
+
 .term{
     font-size: 18px;
 } 
+.mobile-no-display{
+    display: none;
+}
+.second-accent-line{
+    display: none;
+}
+
+
 @media ( min-width: 40em) {
+    .tablet-space-front{
+    font-size:150px;
+    font-family: bellefair;
+    font-weight: 100;
+    margin-bottom: 15px;
+    display: block;
+}
     .bottom-facts-container{
         display: flex;
         flex-direction: row;
@@ -373,12 +403,13 @@ hr{
        width:100%;
        gap: 8em;
     }
-    hr{
+    .second-accent{
         display: none;
     }
     h6{
         text-align: left;
         margin-left: 2em;
+        margin-top: 0;
     }
    .accent-list-box {
        display: none;
@@ -397,14 +428,42 @@ hr{
          
     }
     .tablet-pilot-container{
-        height: 139vh;
+        height: 150vh;
 
     }
-    .tablet-img-box{
-        object-position: bottom;
-       
+    .tablet-img-box {
+        position: relative;
+        height: 550px;
+       width: 50%;
+        
+    }
+    .tablet-pilot-img-adjust{
+        position: absolute;
+        bottom: 0;
+        width: 430px;
+        height: 500;
     }
     
+    .tablet-pilot-img {
+        position: absolute;
+        bottom: 0;
+        
+    }
+    .second-accent-line{
+    width: 75%;
+    height: 1px;
+    color: #383B4B;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #383B4B;
+    margin-top: 0;
+    display: block;
+    }
+    .mobile-no-display{
+        display:block;
+    }
+
 }
 
 
