@@ -1,4 +1,133 @@
 @media only screen and (max-width:24em){
+body{
+    
+}
+.mobile-hero-container{
+    background-image: url("mob-hero.png");
+    background-position:center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    max-width: 370px;
+}
+.landing-page-box {
+    width: 350px;
+    height: 300px;
+    line-height: 10px;
+   
+}
+h6{
+    margin-inline-start: 3.5em;
+    font-size:18px;
+    margin-top: 3em;
+    font-family: Barlow Condensed;
+     font-style: normal;
+     font-weight: normal;
+    }
+    .first-planet{
+        width: 200px;
+        height: 200px;
+    }
+    h2 {
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 10px;
+        padding-bottom: 0;
+        margin-bottom: 25px;
+       }
+       .moon-list-box{
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 10px;
+        letter-spacing: 2.7px;
+        
+       }
+       .moon-text{
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        color: #D0D6F9;
+        text-align: center;
+       }
+       .bottom-facts-container{
+           display: flex;
+            flex-direction: column;
+            align-items: center;
+       }
+       .bottom-facts-box-1,.bottom-facts-box-2{
+          align-items: center;
+
+       }
+       .tablet-pilot-img{
+           display: none;
+       }
+       .second-accent-line{
+           display: none;
+       }
+       .mobile-text{
+           width: 355px;
+           margin-bottom: 0;
+           line-height: 22px;
+       }
+       .tablet-space-front{
+         
+           height: 50px;
+       }
+       h3 {
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        margin-inline-start: 1em;
+        height: 50px;
+    }
+   
+    .nav-menu{
+        display: none;
+    }
+    .second-accent{
+        margin-top: 0;
+    }
+    .pilot-img{
+        display: flex;
+       margin-inline-start: 6em;
+    }
+    .pilot-text{
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #D0D6F9;
+        width: 350px;
+        text-align: center;
+        
+       }
+       .main-pilot-container{
+           background-image: url("second-background.jpeg");
+           color: white;
+       }
+       .pilot-name{
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    
+      }
+      .rep-job{
+          color: grey;
+      }
+      .rep{
+          margin-inline-end: 0.5em;
+      }
 
 }
 
@@ -71,16 +200,18 @@ a, .active{
     flex-direction: column;
    justify-content: center;
    align-items: center;
-    width: 450px;
-    height: 334px;
+    width: 375px;
+    height: 400px;
 }
-h4{
+desktop-front-text{
     text-align: center;
     font-family: Barlow;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 margin-inline-start: 2em;
+width:375px;
+
 }
 h1{
     font-family: Bellefair;
@@ -96,7 +227,7 @@ margin-inline-end: 1em;
 .front-bottom-box{
     display: flex;
     align-content: center;
-    margin-inline-start: 8em;
+    margin-inline-start: 6em;
 }
 h3 {
     font-family: Barlow Condensed;
@@ -123,9 +254,10 @@ h3 {
     gap: 0.5em;
 }
 .first-planet{
-    width: 45%;
-    height: 300px;
-    margin-inline-start: 28%;
+    width: 60%;
+    height: 30vh;
+    margin-inline-start: 5em;
+   
 }
 .moon-container{
     background-image: url("third-background.png");
@@ -138,6 +270,12 @@ h3 {
 h6{
     margin-top:0;
     padding-top: 4em;
+    font-size: 16px;
+    margin-inline-start: 3em;
+}
+.rep{
+    color: grey;
+
 }
 
 
@@ -245,7 +383,6 @@ a, .active{
     
 }
 .desktop-landing-box{
-    width:450px;
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -262,14 +399,14 @@ a, .active{
    text-align: left;
    width: 440px;
    }
-h4 { 
-       line-height: 25px;
+desktop-front-text { 
+       
        text-align: left;
        font-size:18px;
        font-family: barlow;
        font-weight: 400;
        color: #D0D6F9;
-       width: 440px;
+       width: 435px;
    }
    .space-front{
        font-size:100px;
@@ -347,7 +484,7 @@ h4 {
     font-size: 100px;
     line-height: 10px;
    }
-   .moon-list-box{
+  .moon-list-box{
     font-family: Barlow Condensed;
     font-style: normal;
     font-weight: normal;
@@ -355,7 +492,7 @@ h4 {
     line-height: 10px;
     letter-spacing: 2.7px;
     
-   }
+   } 
    .moon-text{
     font-family: Barlow;
     font-style: normal;
