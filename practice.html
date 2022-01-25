@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    body{
+        background-color: rgb(29, 29, 29);
+        
+    }
+    button{
+        width: 100px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: white;
+        font-size: 16px;
+        padding: 2px ;
+        height: 40px;
+        
+    }
+    .start-btn, .info-box, .quiz-box{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+    .info-list , .info-title{
+        background-color: white;
+    }
+   
+    start Quiz ::-webkit-search-results-button 
+    
+    .start-btn, button {
+        font-size: 25px;
+        font-weight: 500;
+        color:black;
+        padding: 15px 30px;
+        outline:none;
+        border:none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: white;
+    }
+    .info-box{
+        width:540px;
+        border-radius:5px;
+        display: none;
+    }
+    .info-box .info-title{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        font-weight:600;
+        border-bottom: 1px solid grey;
+    }
+    .info-title{
+        padding-bottom: 10px;
+    }
+    .info-box , .info-list{
+        padding: 15px 35px;
+
+    }
+    .info-box, .info-list, .info , span {
+        font-weight: 600;
+        color: black;
+        font-size: 20px;
+    }
+    .info span{
+        color:grey;
+    }
+    .info-box  .buttons {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .info-box .buttons button {
+        margin: 0 5px;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 90px;
+        cursor: pointer;
+        font-weight: 600;
+        background: black;
+        color: white;
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    .buttons button.quit{
+        color:black;
+        background: whitesmoke;
+        border-color: grey;
+    }
+    .buttons button.restart:hover{
+        background: grey;
+
+    }
+    .buttons button.quit:hover{
+        background: black;
+        color:white;
+    }
+    .quiz-box{
+        width: 550px;
+        background: white;
+        border-radius: 5px;
+        height: 530px;
+    }
+    .quiz-box header{
+        height: 70px;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0px 1px 2px 1px grey; 
+        position: relative;
+        z-index: 99;
+    }
+    .quiz-box header .title{
+        font-size:20px;
+        font-weight: 600;
+
+    }
+    .quiz-box header .timer{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        width:145px;
+        background-color: rgb(184, 183, 183);
+        border: 1px solid grey;
+        border-radius:5px;
+        padding: 0 8px;
+        height: 40px;
+    }
+    .quiz-box header .timer .time-text{
+        font-size: 20px;
+        font-weight: 400;
+        user-select: none;
+    }
+    .quiz-box header .timer .timer-sec{
+        font-size: 18px;
+        height: 30px;
+        font-weight: 500;
+        width: 45px;
+        background-color: rgb(95, 95, 95);
+        text-align: center;
+        line-height: 30px;
+        border-radius: 5px;
+        color: white;
+        user-select: none;
+    }
+    .quiz-box section{
+        padding: 20px 30px 20px 30px;
+    }
+    .quiz-box section .que-text{
+        font-size: 25px;
+        font-weight: 600;
+
+    }
+    .quiz-box section .option-list {
+        padding: 20px;
+        display: block;
+    }
+    .quiz-box section .option-list .option{
+        background-color: #F1F1F1;
+        border: 1px solid rgb(190, 190, 190);
+        border-radius: 2px;
+        padding:8px 15px;
+        margin-bottom: 8px;
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        transition:  all 0.3s ease-in-out;
+    }
+    section .option-list .option:hover{
+        color: ivory;
+        background-color: grey;
+        
+    }
+    section .option-list .option span:hover{
+        color: white;
+    }
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div class=" start-btn"><button>Start Quiz</button></div>
+
+    <div class="info-box">
+        <div class="info-title">
+            <span>Play by the rules or else ... </span>
+        </div>
+        <div class="info-list">
+            <div class="info">1. You will only have<span> 15 seconds</span> per each question.</div>
+            <div class="info">2. once you select your answer, you cant reselect.</div>
+            <div class="info">3. You cant selct any option once timer goes off.</div>
+            <div class="info">4. You cant exit from the quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="quiz-box">
+        <header>
+            <div class="title">The Coolest Quiz App</div>
+                <div class="timer">
+                    <div class="time-text">Time Left</div>
+                    <div class="timer-sec">15</div>
+                </div>
+        </header>
+        <section>
+            <div class="que-text">
+                <span>Which of the following is not a real eCommerce platform?</span>
+            </div>
+
+            <div class="option-list">
+                <input type="radio" name="select" id="option-1">
+                <input type="radio" name="select" id="option-2">
+                <input type="radio" name="select" id="option-3">
+                <input type="radio" name="select" id="option-4">
+                <div class="option"><label for="" class="option-1"></label><div class="dot"></div>
+                    <span>Shopify</span>
+                </div>
+                <div class="option"><label for="" class="option-2"></label><div class="dot"></div>
+                    <span>WooCommerce</span>
+                </div>
+                <div class="option"><label for="" class="option-3"></label><div class="dot"></div>
+                    <span>ShopCommerce</span>
+                </div>
+                <div class="option"><label for="" class="option-4"></label><div class="dot"></div>
+                    <span>BigCommerce</span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="total-que">
+                <span><p>2</p>of<p>5</p>Questions</span>
+            </div>
+            <button class="next-button">Next Question</button>
+        </footer>
+    </div>
+    
+      
+  </body>
+
+</html>
